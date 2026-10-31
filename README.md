@@ -18,7 +18,7 @@ Subscription URL for your client:
 
 1. Fetch every URL in `sourcelist.txt` (plain or base64). Supports vmess, vless (incl. Reality), trojan and shadowsocks. Duplicates are removed.
 2. Alive test through `http://www.gstatic.com/generate_204`. Ping must be 3000 ms or less.
-3. Download speed test through each alive config. Configs above 50 Mbps are removed (see flags).
+3. Download speed test through each alive config. Only configs at 50 Mbps or more are kept.
 4. Exit country is looked up through the proxy and turned into a flag emoji.
 5. Remarks are rewritten and both files are written. If nothing survives, the old files are left untouched.
 
@@ -33,7 +33,7 @@ Subscription URL for your client:
 Needs Go 1.22+ and the [Xray-core](https://github.com/XTLS/Xray-core/releases) binary.
 
 ```
-go run . -xray /path/to/xray
+go run . -xray /path/to/xray -max-speed 0 -min-speed 50
 ```
 
 ## Flags
@@ -51,7 +51,7 @@ go run . -xray /path/to/xray
 | `-ping-url` | gstatic generate_204 | Must answer HTTP 204 |
 | `-speed-url` | Cloudflare `__down` | Any large file URL |
 
-To keep only configs of at least 50 Mbps instead, run with `-max-speed 0 -min-speed 50`.
+The table shows the program's built-in defaults. The workflow runs with `-max-speed 0 -min-speed 50`, so only configs of 50 Mbps or more are kept. If none reach 50 Mbps, the run fails and the previous files stay as they are; lower `-min-speed` in `update.yml` if that happens.
 
 ## Notes
 

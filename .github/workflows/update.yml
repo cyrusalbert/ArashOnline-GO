@@ -1,0 +1,46 @@
+name: Update configs
+
+on:
+  schedule:
+    - cron: "0 */12 * * *" # 00:00 and 12:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-configs
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.22"
+
+      - name: Install Xray-core
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release download --repo XTLS/Xray-core --pattern "Xray-linux-64.zip" --dir /tmp/xray
+          unzip -o /tmp/xray/Xray-linux-64.zip -d /tmp/xray
+          chmod +x /tmp/xray/xray
+          /tmp/xray/xray version
+
+      - name: Build and run
+        run: |
+          go build -o /tmp/arashonline .
+          /tmp/arashonline -xray /tmp/xray/xray
+
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add arashonline.txt arashonline-highspeed.txt
+          git diff --cached --quiet || git commit -m "Update configs $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push

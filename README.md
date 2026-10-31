@@ -16,7 +16,7 @@ Subscription URL for your client:
 https://raw.githubusercontent.com/cyrusalbert/ArashOnline-GO/refs/heads/main/arashonline.txt#ArashOnline-GO
 ```
 ```
-https://raw.githubusercontent.com/cyrusalbert/ArashOnline-GO/refs/heads/main/arashonline-highspeed.txt#ArashOnline-HighSpeed
+https://raw.githubusercontent.com/cyrusalbert/ArashOnline-GO/refs/heads/main/arashonline-highspeed.txt#ArashOnline-GO-HighSpeed
 ```
 
 ## Pipeline

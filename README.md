@@ -12,7 +12,8 @@ Collects v2ray configs from the subscription links in `sourcelist.txt`, tests th
 Remark format: `1 | 🇩🇪 | 1.2.3.4:443 | 87ms | 23.4Mbps` (rank by ping | exit country | address:port | ping | speed).
 
 Subscription URL for your client:
-`https://raw.githubusercontent.com/<USER>/<REPO>/main/arashonline.txt`
+`https://raw.githubusercontent.com/<USER>/<REPO>/main/arashonline.txt#ArashOnline-GO`
+`https://raw.githubusercontent.com/cyrusalbert/ArashOnline-GO/refs/heads/main/arashonline-highspeed.txt#ArashOnline-HighSpeed`
 
 ## Pipeline
 

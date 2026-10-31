@@ -1,0 +1,4 @@
+# One v2ray subscription URL per line (plain text or base64 both work).
+# Lines starting with # are ignored.
+# https://example.com/sub.txt
+# https://raw.githubusercontent.com/USER/REPO/main/configs.txt

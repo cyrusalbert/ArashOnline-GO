@@ -1,0 +1,406 @@
+{
+  "log": {
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "tag": "mixed10829",
+      "port": 10829,
+      "listen": "127.0.0.1",
+      "protocol": "mixed",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      }
+    },
+    {
+      "tag": "mixed10830",
+      "port": 10830,
+      "listen": "127.0.0.1",
+      "protocol": "mixed",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      }
+    },
+    {
+      "tag": "mixed10831",
+      "port": 10831,
+      "listen": "127.0.0.1",
+      "protocol": "mixed",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      }
+    },
+    {
+      "tag": "mixed10832",
+      "port": 10832,
+      "listen": "127.0.0.1",
+      "protocol": "mixed",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      }
+    },
+    {
+      "tag": "mixed10833",
+      "port": 10833,
+      "listen": "127.0.0.1",
+      "protocol": "mixed",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      }
+    },
+    {
+      "tag": "mixed10834",
+      "port": 10834,
+      "listen": "127.0.0.1",
+      "protocol": "mixed",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      }
+    },
+    {
+      "tag": "mixed10835",
+      "port": 10835,
+      "listen": "127.0.0.1",
+      "protocol": "mixed",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      }
+    },
+    {
+      "tag": "mixed10836",
+      "port": 10836,
+      "listen": "127.0.0.1",
+      "protocol": "mixed",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "masque",
+      "settings": {
+        "address": "162.159.198.238",
+        "port": 500,
+        "remoteDNS": [
+          "1.1.1.1",
+          "9.9.9.9"
+        ]
+      },
+      "streamSettings": {
+        "method": "masque",
+        "masqueSettings": {
+          "warp": {
+            "privateKey": "MHcCAQEEIMb9yuPmxqNWWsM/sTYFdZcYWI7opmCYWchYGCIcBxWZoAoGCCqGSM49AwEHoUQDQgAEN828NZWvHFCGDBdDjLHfTCErGReVz03fiQuTg5big5vbdmXiPvImneKc36x9hZC03iii6dXlnhUIADKrGbmmhw==",
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEIaU7MToJm9NKp8YfGxR6r+/h4mcG7SxI8tsW8OR1A5tv/zCzVbCRRh2t87/kxnP6lAy0lkr7qYwu+ox+k3dr6w==",
+            "address": [
+              "172.16.0.2/32",
+              "2606:4700:110:8ef2:d327:6129:fa96:8276/128"
+            ]
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.cloudflare.com",
+          "alpn": [
+            "h2"
+          ]
+        }
+      },
+      "tag": "proxy10829"
+    },
+    {
+      "protocol": "masque",
+      "settings": {
+        "address": "162.159.198.16",
+        "port": 500,
+        "remoteDNS": [
+          "1.1.1.1",
+          "9.9.9.9"
+        ]
+      },
+      "streamSettings": {
+        "method": "masque",
+        "masqueSettings": {
+          "warp": {
+            "privateKey": "MHcCAQEEIMb9yuPmxqNWWsM/sTYFdZcYWI7opmCYWchYGCIcBxWZoAoGCCqGSM49AwEHoUQDQgAEN828NZWvHFCGDBdDjLHfTCErGReVz03fiQuTg5big5vbdmXiPvImneKc36x9hZC03iii6dXlnhUIADKrGbmmhw==",
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEIaU7MToJm9NKp8YfGxR6r+/h4mcG7SxI8tsW8OR1A5tv/zCzVbCRRh2t87/kxnP6lAy0lkr7qYwu+ox+k3dr6w==",
+            "address": [
+              "172.16.0.2/32",
+              "2606:4700:110:8ef2:d327:6129:fa96:8276/128"
+            ]
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.cloudflare.com",
+          "alpn": [
+            "h2"
+          ]
+        }
+      },
+      "tag": "proxy10830"
+    },
+    {
+      "protocol": "masque",
+      "settings": {
+        "address": "162.159.198.135",
+        "port": 500,
+        "remoteDNS": [
+          "1.1.1.1",
+          "9.9.9.9"
+        ]
+      },
+      "streamSettings": {
+        "method": "masque",
+        "masqueSettings": {
+          "warp": {
+            "privateKey": "MHcCAQEEIMb9yuPmxqNWWsM/sTYFdZcYWI7opmCYWchYGCIcBxWZoAoGCCqGSM49AwEHoUQDQgAEN828NZWvHFCGDBdDjLHfTCErGReVz03fiQuTg5big5vbdmXiPvImneKc36x9hZC03iii6dXlnhUIADKrGbmmhw==",
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEIaU7MToJm9NKp8YfGxR6r+/h4mcG7SxI8tsW8OR1A5tv/zCzVbCRRh2t87/kxnP6lAy0lkr7qYwu+ox+k3dr6w==",
+            "address": [
+              "172.16.0.2/32",
+              "2606:4700:110:8ef2:d327:6129:fa96:8276/128"
+            ]
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.cloudflare.com",
+          "alpn": [
+            "h2"
+          ]
+        }
+      },
+      "tag": "proxy10831"
+    },
+    {
+      "protocol": "masque",
+      "settings": {
+        "address": "162.159.198.146",
+        "port": 500,
+        "remoteDNS": [
+          "1.1.1.1",
+          "9.9.9.9"
+        ]
+      },
+      "streamSettings": {
+        "method": "masque",
+        "masqueSettings": {
+          "warp": {
+            "privateKey": "MHcCAQEEIMb9yuPmxqNWWsM/sTYFdZcYWI7opmCYWchYGCIcBxWZoAoGCCqGSM49AwEHoUQDQgAEN828NZWvHFCGDBdDjLHfTCErGReVz03fiQuTg5big5vbdmXiPvImneKc36x9hZC03iii6dXlnhUIADKrGbmmhw==",
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEIaU7MToJm9NKp8YfGxR6r+/h4mcG7SxI8tsW8OR1A5tv/zCzVbCRRh2t87/kxnP6lAy0lkr7qYwu+ox+k3dr6w==",
+            "address": [
+              "172.16.0.2/32",
+              "2606:4700:110:8ef2:d327:6129:fa96:8276/128"
+            ]
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.cloudflare.com",
+          "alpn": [
+            "h2"
+          ]
+        }
+      },
+      "tag": "proxy10832"
+    },
+    {
+      "protocol": "masque",
+      "settings": {
+        "address": "162.159.198.237",
+        "port": 500,
+        "remoteDNS": [
+          "1.1.1.1",
+          "9.9.9.9"
+        ]
+      },
+      "streamSettings": {
+        "method": "masque",
+        "masqueSettings": {
+          "warp": {
+            "privateKey": "MHcCAQEEIMb9yuPmxqNWWsM/sTYFdZcYWI7opmCYWchYGCIcBxWZoAoGCCqGSM49AwEHoUQDQgAEN828NZWvHFCGDBdDjLHfTCErGReVz03fiQuTg5big5vbdmXiPvImneKc36x9hZC03iii6dXlnhUIADKrGbmmhw==",
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEIaU7MToJm9NKp8YfGxR6r+/h4mcG7SxI8tsW8OR1A5tv/zCzVbCRRh2t87/kxnP6lAy0lkr7qYwu+ox+k3dr6w==",
+            "address": [
+              "172.16.0.2/32",
+              "2606:4700:110:8ef2:d327:6129:fa96:8276/128"
+            ]
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.cloudflare.com",
+          "alpn": [
+            "h2"
+          ]
+        }
+      },
+      "tag": "proxy10833"
+    },
+    {
+      "protocol": "masque",
+      "settings": {
+        "address": "162.159.198.231",
+        "port": 500,
+        "remoteDNS": [
+          "1.1.1.1",
+          "9.9.9.9"
+        ]
+      },
+      "streamSettings": {
+        "method": "masque",
+        "masqueSettings": {
+          "warp": {
+            "privateKey": "MHcCAQEEIMb9yuPmxqNWWsM/sTYFdZcYWI7opmCYWchYGCIcBxWZoAoGCCqGSM49AwEHoUQDQgAEN828NZWvHFCGDBdDjLHfTCErGReVz03fiQuTg5big5vbdmXiPvImneKc36x9hZC03iii6dXlnhUIADKrGbmmhw==",
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEIaU7MToJm9NKp8YfGxR6r+/h4mcG7SxI8tsW8OR1A5tv/zCzVbCRRh2t87/kxnP6lAy0lkr7qYwu+ox+k3dr6w==",
+            "address": [
+              "172.16.0.2/32",
+              "2606:4700:110:8ef2:d327:6129:fa96:8276/128"
+            ]
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.cloudflare.com",
+          "alpn": [
+            "h2"
+          ]
+        }
+      },
+      "tag": "proxy10834"
+    },
+    {
+      "protocol": "masque",
+      "settings": {
+        "address": "162.159.198.136",
+        "port": 500,
+        "remoteDNS": [
+          "1.1.1.1",
+          "9.9.9.9"
+        ]
+      },
+      "streamSettings": {
+        "method": "masque",
+        "masqueSettings": {
+          "warp": {
+            "privateKey": "MHcCAQEEIMb9yuPmxqNWWsM/sTYFdZcYWI7opmCYWchYGCIcBxWZoAoGCCqGSM49AwEHoUQDQgAEN828NZWvHFCGDBdDjLHfTCErGReVz03fiQuTg5big5vbdmXiPvImneKc36x9hZC03iii6dXlnhUIADKrGbmmhw==",
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEIaU7MToJm9NKp8YfGxR6r+/h4mcG7SxI8tsW8OR1A5tv/zCzVbCRRh2t87/kxnP6lAy0lkr7qYwu+ox+k3dr6w==",
+            "address": [
+              "172.16.0.2/32",
+              "2606:4700:110:8ef2:d327:6129:fa96:8276/128"
+            ]
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.cloudflare.com",
+          "alpn": [
+            "h2"
+          ]
+        }
+      },
+      "tag": "proxy10835"
+    },
+    {
+      "protocol": "masque",
+      "settings": {
+        "address": "162.159.198.142",
+        "port": 500,
+        "remoteDNS": [
+          "1.1.1.1",
+          "9.9.9.9"
+        ]
+      },
+      "streamSettings": {
+        "method": "masque",
+        "masqueSettings": {
+          "warp": {
+            "privateKey": "MHcCAQEEIMb9yuPmxqNWWsM/sTYFdZcYWI7opmCYWchYGCIcBxWZoAoGCCqGSM49AwEHoUQDQgAEN828NZWvHFCGDBdDjLHfTCErGReVz03fiQuTg5big5vbdmXiPvImneKc36x9hZC03iii6dXlnhUIADKrGbmmhw==",
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEIaU7MToJm9NKp8YfGxR6r+/h4mcG7SxI8tsW8OR1A5tv/zCzVbCRRh2t87/kxnP6lAy0lkr7qYwu+ox+k3dr6w==",
+            "address": [
+              "172.16.0.2/32",
+              "2606:4700:110:8ef2:d327:6129:fa96:8276/128"
+            ]
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.cloudflare.com",
+          "alpn": [
+            "h2"
+          ]
+        }
+      },
+      "tag": "proxy10836"
+    }
+  ],
+  "routing": {
+    "domainStrategy": "IPIfNonMatch",
+    "rules": [
+      {
+        "type": "field",
+        "inboundTag": [
+          "mixed10829"
+        ],
+        "outboundTag": "proxy10829"
+      },
+      {
+        "type": "field",
+        "inboundTag": [
+          "mixed10830"
+        ],
+        "outboundTag": "proxy10830"
+      },
+      {
+        "type": "field",
+        "inboundTag": [
+          "mixed10831"
+        ],
+        "outboundTag": "proxy10831"
+      },
+      {
+        "type": "field",
+        "inboundTag": [
+          "mixed10832"
+        ],
+        "outboundTag": "proxy10832"
+      },
+      {
+        "type": "field",
+        "inboundTag": [
+          "mixed10833"
+        ],
+        "outboundTag": "proxy10833"
+      },
+      {
+        "type": "field",
+        "inboundTag": [
+          "mixed10834"
+        ],
+        "outboundTag": "proxy10834"
+      },
+      {
+        "type": "field",
+        "inboundTag": [
+          "mixed10835"
+        ],
+        "outboundTag": "proxy10835"
+      },
+      {
+        "type": "field",
+        "inboundTag": [
+          "mixed10836"
+        ],
+        "outboundTag": "proxy10836"
+      }
+    ]
+  }
+}

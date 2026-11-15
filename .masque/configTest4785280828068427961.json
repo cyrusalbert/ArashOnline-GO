@@ -1,0 +1,79 @@
+{
+  "log": {
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "tag": "socks10862",
+      "port": 10862,
+      "listen": "127.0.0.1",
+      "protocol": "mixed",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "masque",
+      "settings": {
+        "address": "162.159.198.16",
+        "port": 500,
+        "remoteDNS": [
+          "1.1.1.1",
+          "9.9.9.9"
+        ]
+      },
+      "streamSettings": {
+        "method": "masque",
+        "masqueSettings": {
+          "warp": {
+            "privateKey": "MHcCAQEEIMb9yuPmxqNWWsM/sTYFdZcYWI7opmCYWchYGCIcBxWZoAoGCCqGSM49AwEHoUQDQgAEN828NZWvHFCGDBdDjLHfTCErGReVz03fiQuTg5big5vbdmXiPvImneKc36x9hZC03iii6dXlnhUIADKrGbmmhw==",
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEIaU7MToJm9NKp8YfGxR6r+/h4mcG7SxI8tsW8OR1A5tv/zCzVbCRRh2t87/kxnP6lAy0lkr7qYwu+ox+k3dr6w==",
+            "address": [
+              "172.16.0.2/32",
+              "2606:4700:110:8ef2:d327:6129:fa96:8276/128"
+            ]
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.cloudflare.com",
+          "alpn": [
+            "h2"
+          ]
+        }
+      },
+      "tag": "proxy"
+    },
+    {
+      "tag": "direct",
+      "protocol": "freedom",
+      "streamSettings": {
+        "sockopt": {
+          "happyEyeballs": {
+            "tryDelayMs": 300,
+            "prioritizeIPv6": false,
+            "interleave": 2,
+            "maxConcurrentTry": 20
+          }
+        }
+      }
+    },
+    {
+      "tag": "block",
+      "protocol": "blackhole"
+    }
+  ],
+  "routing": {
+    "domainStrategy": "AsIs",
+    "rules": [
+      {
+        "type": "field",
+        "network": "tcp,udp",
+        "outboundTag": "proxy"
+      }
+    ]
+  }
+}

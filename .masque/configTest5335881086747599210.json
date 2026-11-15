@@ -1,0 +1,798 @@
+{
+  "log": {
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "tag": "mixed10845",
+      "port": 10845,
+      "listen": "127.0.0.1",
+      "protocol": "mixed",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      }
+    },
+    {
+      "tag": "mixed10846",
+      "port": 10846,
+      "listen": "127.0.0.1",
+      "protocol": "mixed",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      }
+    },
+    {
+      "tag": "mixed10847",
+      "port": 10847,
+      "listen": "127.0.0.1",
+      "protocol": "mixed",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      }
+    },
+    {
+      "tag": "mixed10848",
+      "port": 10848,
+      "listen": "127.0.0.1",
+      "protocol": "mixed",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      }
+    },
+    {
+      "tag": "mixed10849",
+      "port": 10849,
+      "listen": "127.0.0.1",
+      "protocol": "mixed",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      }
+    },
+    {
+      "tag": "mixed10850",
+      "port": 10850,
+      "listen": "127.0.0.1",
+      "protocol": "mixed",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      }
+    },
+    {
+      "tag": "mixed10851",
+      "port": 10851,
+      "listen": "127.0.0.1",
+      "protocol": "mixed",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      }
+    },
+    {
+      "tag": "mixed10852",
+      "port": 10852,
+      "listen": "127.0.0.1",
+      "protocol": "mixed",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      }
+    },
+    {
+      "tag": "mixed10853",
+      "port": 10853,
+      "listen": "127.0.0.1",
+      "protocol": "mixed",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      }
+    },
+    {
+      "tag": "mixed10854",
+      "port": 10854,
+      "listen": "127.0.0.1",
+      "protocol": "mixed",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      }
+    },
+    {
+      "tag": "mixed10855",
+      "port": 10855,
+      "listen": "127.0.0.1",
+      "protocol": "mixed",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      }
+    },
+    {
+      "tag": "mixed10856",
+      "port": 10856,
+      "listen": "127.0.0.1",
+      "protocol": "mixed",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      }
+    },
+    {
+      "tag": "mixed10857",
+      "port": 10857,
+      "listen": "127.0.0.1",
+      "protocol": "mixed",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      }
+    },
+    {
+      "tag": "mixed10858",
+      "port": 10858,
+      "listen": "127.0.0.1",
+      "protocol": "mixed",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      }
+    },
+    {
+      "tag": "mixed10859",
+      "port": 10859,
+      "listen": "127.0.0.1",
+      "protocol": "mixed",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      }
+    },
+    {
+      "tag": "mixed10860",
+      "port": 10860,
+      "listen": "127.0.0.1",
+      "protocol": "mixed",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "masque",
+      "settings": {
+        "address": "162.159.198.252",
+        "port": 8443,
+        "remoteDNS": [
+          "1.1.1.1",
+          "8.8.8.8"
+        ]
+      },
+      "streamSettings": {
+        "method": "masque",
+        "masqueSettings": {
+          "warp": {
+            "privateKey": "MHcCAQEEII6V0vcoGSHVAIkgPU5ufPqhvHhc7kSMPqkTtwEEhz7LoAoGCCqGSM49AwEHoUQDQgAEoR3E2PiZ6XlNB1LtbpZoNS2Db/GDvFuB1IMtrUss7c3Kko4dS8vHIMxqrp4Z2FGDhNml2pnJTBGiAJPUBnGYKA==",
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEIaU7MToJm9NKp8YfGxR6r+/h4mcG7SxI8tsW8OR1A5tv/zCzVbCRRh2t87/kxnP6lAy0lkr7qYwu+ox+k3dr6w==",
+            "address": [
+              "172.16.0.2/32",
+              "2606:4700:110:8e12:5721:747f:a916:d226/128"
+            ]
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.cloudflare.com",
+          "alpn": [
+            "h2"
+          ]
+        }
+      },
+      "tag": "proxy10845"
+    },
+    {
+      "protocol": "masque",
+      "settings": {
+        "address": "162.159.198.119",
+        "port": 500,
+        "remoteDNS": [
+          "1.1.1.1",
+          "8.8.8.8"
+        ]
+      },
+      "streamSettings": {
+        "method": "masque",
+        "masqueSettings": {
+          "warp": {
+            "privateKey": "MHcCAQEEII6V0vcoGSHVAIkgPU5ufPqhvHhc7kSMPqkTtwEEhz7LoAoGCCqGSM49AwEHoUQDQgAEoR3E2PiZ6XlNB1LtbpZoNS2Db/GDvFuB1IMtrUss7c3Kko4dS8vHIMxqrp4Z2FGDhNml2pnJTBGiAJPUBnGYKA==",
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEIaU7MToJm9NKp8YfGxR6r+/h4mcG7SxI8tsW8OR1A5tv/zCzVbCRRh2t87/kxnP6lAy0lkr7qYwu+ox+k3dr6w==",
+            "address": [
+              "172.16.0.2/32",
+              "2606:4700:110:8e12:5721:747f:a916:d226/128"
+            ]
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.cloudflare.com",
+          "alpn": [
+            "h2"
+          ]
+        }
+      },
+      "tag": "proxy10846"
+    },
+    {
+      "protocol": "masque",
+      "settings": {
+        "address": "162.159.198.46",
+        "port": 443,
+        "remoteDNS": [
+          "1.1.1.1",
+          "8.8.8.8"
+        ]
+      },
+      "streamSettings": {
+        "method": "masque",
+        "masqueSettings": {
+          "warp": {
+            "privateKey": "MHcCAQEEII6V0vcoGSHVAIkgPU5ufPqhvHhc7kSMPqkTtwEEhz7LoAoGCCqGSM49AwEHoUQDQgAEoR3E2PiZ6XlNB1LtbpZoNS2Db/GDvFuB1IMtrUss7c3Kko4dS8vHIMxqrp4Z2FGDhNml2pnJTBGiAJPUBnGYKA==",
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEIaU7MToJm9NKp8YfGxR6r+/h4mcG7SxI8tsW8OR1A5tv/zCzVbCRRh2t87/kxnP6lAy0lkr7qYwu+ox+k3dr6w==",
+            "address": [
+              "172.16.0.2/32",
+              "2606:4700:110:8e12:5721:747f:a916:d226/128"
+            ]
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.cloudflare.com",
+          "alpn": [
+            "h2"
+          ]
+        }
+      },
+      "tag": "proxy10847"
+    },
+    {
+      "protocol": "masque",
+      "settings": {
+        "address": "162.159.198.233",
+        "port": 4443,
+        "remoteDNS": [
+          "1.1.1.1",
+          "8.8.8.8"
+        ]
+      },
+      "streamSettings": {
+        "method": "masque",
+        "masqueSettings": {
+          "warp": {
+            "privateKey": "MHcCAQEEII6V0vcoGSHVAIkgPU5ufPqhvHhc7kSMPqkTtwEEhz7LoAoGCCqGSM49AwEHoUQDQgAEoR3E2PiZ6XlNB1LtbpZoNS2Db/GDvFuB1IMtrUss7c3Kko4dS8vHIMxqrp4Z2FGDhNml2pnJTBGiAJPUBnGYKA==",
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEIaU7MToJm9NKp8YfGxR6r+/h4mcG7SxI8tsW8OR1A5tv/zCzVbCRRh2t87/kxnP6lAy0lkr7qYwu+ox+k3dr6w==",
+            "address": [
+              "172.16.0.2/32",
+              "2606:4700:110:8e12:5721:747f:a916:d226/128"
+            ]
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.cloudflare.com",
+          "alpn": [
+            "h2"
+          ]
+        }
+      },
+      "tag": "proxy10848"
+    },
+    {
+      "protocol": "masque",
+      "settings": {
+        "address": "162.159.198.52",
+        "port": 4500,
+        "remoteDNS": [
+          "1.1.1.1",
+          "8.8.8.8"
+        ]
+      },
+      "streamSettings": {
+        "method": "masque",
+        "masqueSettings": {
+          "warp": {
+            "privateKey": "MHcCAQEEII6V0vcoGSHVAIkgPU5ufPqhvHhc7kSMPqkTtwEEhz7LoAoGCCqGSM49AwEHoUQDQgAEoR3E2PiZ6XlNB1LtbpZoNS2Db/GDvFuB1IMtrUss7c3Kko4dS8vHIMxqrp4Z2FGDhNml2pnJTBGiAJPUBnGYKA==",
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEIaU7MToJm9NKp8YfGxR6r+/h4mcG7SxI8tsW8OR1A5tv/zCzVbCRRh2t87/kxnP6lAy0lkr7qYwu+ox+k3dr6w==",
+            "address": [
+              "172.16.0.2/32",
+              "2606:4700:110:8e12:5721:747f:a916:d226/128"
+            ]
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.cloudflare.com",
+          "alpn": [
+            "h2"
+          ]
+        }
+      },
+      "tag": "proxy10849"
+    },
+    {
+      "protocol": "masque",
+      "settings": {
+        "address": "162.159.198.155",
+        "port": 8443,
+        "remoteDNS": [
+          "1.1.1.1",
+          "8.8.8.8"
+        ]
+      },
+      "streamSettings": {
+        "method": "masque",
+        "masqueSettings": {
+          "warp": {
+            "privateKey": "MHcCAQEEII6V0vcoGSHVAIkgPU5ufPqhvHhc7kSMPqkTtwEEhz7LoAoGCCqGSM49AwEHoUQDQgAEoR3E2PiZ6XlNB1LtbpZoNS2Db/GDvFuB1IMtrUss7c3Kko4dS8vHIMxqrp4Z2FGDhNml2pnJTBGiAJPUBnGYKA==",
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEIaU7MToJm9NKp8YfGxR6r+/h4mcG7SxI8tsW8OR1A5tv/zCzVbCRRh2t87/kxnP6lAy0lkr7qYwu+ox+k3dr6w==",
+            "address": [
+              "172.16.0.2/32",
+              "2606:4700:110:8e12:5721:747f:a916:d226/128"
+            ]
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.cloudflare.com",
+          "alpn": [
+            "h2"
+          ]
+        }
+      },
+      "tag": "proxy10850"
+    },
+    {
+      "protocol": "masque",
+      "settings": {
+        "address": "162.159.198.221",
+        "port": 1701,
+        "remoteDNS": [
+          "1.1.1.1",
+          "8.8.8.8"
+        ]
+      },
+      "streamSettings": {
+        "method": "masque",
+        "masqueSettings": {
+          "warp": {
+            "privateKey": "MHcCAQEEII6V0vcoGSHVAIkgPU5ufPqhvHhc7kSMPqkTtwEEhz7LoAoGCCqGSM49AwEHoUQDQgAEoR3E2PiZ6XlNB1LtbpZoNS2Db/GDvFuB1IMtrUss7c3Kko4dS8vHIMxqrp4Z2FGDhNml2pnJTBGiAJPUBnGYKA==",
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEIaU7MToJm9NKp8YfGxR6r+/h4mcG7SxI8tsW8OR1A5tv/zCzVbCRRh2t87/kxnP6lAy0lkr7qYwu+ox+k3dr6w==",
+            "address": [
+              "172.16.0.2/32",
+              "2606:4700:110:8e12:5721:747f:a916:d226/128"
+            ]
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.cloudflare.com",
+          "alpn": [
+            "h2"
+          ]
+        }
+      },
+      "tag": "proxy10851"
+    },
+    {
+      "protocol": "masque",
+      "settings": {
+        "address": "162.159.198.164",
+        "port": 4443,
+        "remoteDNS": [
+          "1.1.1.1",
+          "8.8.8.8"
+        ]
+      },
+      "streamSettings": {
+        "method": "masque",
+        "masqueSettings": {
+          "warp": {
+            "privateKey": "MHcCAQEEII6V0vcoGSHVAIkgPU5ufPqhvHhc7kSMPqkTtwEEhz7LoAoGCCqGSM49AwEHoUQDQgAEoR3E2PiZ6XlNB1LtbpZoNS2Db/GDvFuB1IMtrUss7c3Kko4dS8vHIMxqrp4Z2FGDhNml2pnJTBGiAJPUBnGYKA==",
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEIaU7MToJm9NKp8YfGxR6r+/h4mcG7SxI8tsW8OR1A5tv/zCzVbCRRh2t87/kxnP6lAy0lkr7qYwu+ox+k3dr6w==",
+            "address": [
+              "172.16.0.2/32",
+              "2606:4700:110:8e12:5721:747f:a916:d226/128"
+            ]
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.cloudflare.com",
+          "alpn": [
+            "h2"
+          ]
+        }
+      },
+      "tag": "proxy10852"
+    },
+    {
+      "protocol": "masque",
+      "settings": {
+        "address": "162.159.198.172",
+        "port": 4500,
+        "remoteDNS": [
+          "1.1.1.1",
+          "8.8.8.8"
+        ]
+      },
+      "streamSettings": {
+        "method": "masque",
+        "masqueSettings": {
+          "warp": {
+            "privateKey": "MHcCAQEEII6V0vcoGSHVAIkgPU5ufPqhvHhc7kSMPqkTtwEEhz7LoAoGCCqGSM49AwEHoUQDQgAEoR3E2PiZ6XlNB1LtbpZoNS2Db/GDvFuB1IMtrUss7c3Kko4dS8vHIMxqrp4Z2FGDhNml2pnJTBGiAJPUBnGYKA==",
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEIaU7MToJm9NKp8YfGxR6r+/h4mcG7SxI8tsW8OR1A5tv/zCzVbCRRh2t87/kxnP6lAy0lkr7qYwu+ox+k3dr6w==",
+            "address": [
+              "172.16.0.2/32",
+              "2606:4700:110:8e12:5721:747f:a916:d226/128"
+            ]
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.cloudflare.com",
+          "alpn": [
+            "h2"
+          ]
+        }
+      },
+      "tag": "proxy10853"
+    },
+    {
+      "protocol": "masque",
+      "settings": {
+        "address": "162.159.198.3",
+        "port": 4500,
+        "remoteDNS": [
+          "1.1.1.1",
+          "8.8.8.8"
+        ]
+      },
+      "streamSettings": {
+        "method": "masque",
+        "masqueSettings": {
+          "warp": {
+            "privateKey": "MHcCAQEEII6V0vcoGSHVAIkgPU5ufPqhvHhc7kSMPqkTtwEEhz7LoAoGCCqGSM49AwEHoUQDQgAEoR3E2PiZ6XlNB1LtbpZoNS2Db/GDvFuB1IMtrUss7c3Kko4dS8vHIMxqrp4Z2FGDhNml2pnJTBGiAJPUBnGYKA==",
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEIaU7MToJm9NKp8YfGxR6r+/h4mcG7SxI8tsW8OR1A5tv/zCzVbCRRh2t87/kxnP6lAy0lkr7qYwu+ox+k3dr6w==",
+            "address": [
+              "172.16.0.2/32",
+              "2606:4700:110:8e12:5721:747f:a916:d226/128"
+            ]
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.cloudflare.com",
+          "alpn": [
+            "h2"
+          ]
+        }
+      },
+      "tag": "proxy10854"
+    },
+    {
+      "protocol": "masque",
+      "settings": {
+        "address": "162.159.198.2",
+        "port": 8095,
+        "remoteDNS": [
+          "1.1.1.1",
+          "8.8.8.8"
+        ]
+      },
+      "streamSettings": {
+        "method": "masque",
+        "masqueSettings": {
+          "warp": {
+            "privateKey": "MHcCAQEEICxjK6xPrk9P0eSsdwy3kHcXpOgyj4V8o6PPbfqXJrUOoAoGCCqGSM49AwEHoUQDQgAEwG8OSD6NWTmmTgziOY01jHxB3VNZh9Tmui6LoQYgV4BCPl87M3JF+oYiXhYKUt0QpfIdA/4/1jNvhoJHOIXoxg==",
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEIaU7MToJm9NKp8YfGxR6r+/h4mcG7SxI8tsW8OR1A5tv/zCzVbCRRh2t87/kxnP6lAy0lkr7qYwu+ox+k3dr6w==",
+            "address": [
+              "172.16.0.2/32",
+              "2606:4700:110:8836:7576:c127:90bb:3801/128"
+            ]
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.bing.com",
+          "alpn": [
+            "h2"
+          ]
+        }
+      },
+      "tag": "proxy10855"
+    },
+    {
+      "protocol": "masque",
+      "settings": {
+        "address": "162.159.199.2",
+        "port": 8095,
+        "remoteDNS": [
+          "1.1.1.1",
+          "8.8.8.8"
+        ]
+      },
+      "streamSettings": {
+        "method": "masque",
+        "masqueSettings": {
+          "warp": {
+            "privateKey": "MHcCAQEEICxjK6xPrk9P0eSsdwy3kHcXpOgyj4V8o6PPbfqXJrUOoAoGCCqGSM49AwEHoUQDQgAEwG8OSD6NWTmmTgziOY01jHxB3VNZh9Tmui6LoQYgV4BCPl87M3JF+oYiXhYKUt0QpfIdA/4/1jNvhoJHOIXoxg==",
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEIaU7MToJm9NKp8YfGxR6r+/h4mcG7SxI8tsW8OR1A5tv/zCzVbCRRh2t87/kxnP6lAy0lkr7qYwu+ox+k3dr6w==",
+            "address": [
+              "172.16.0.2/32",
+              "2606:4700:110:8836:7576:c127:90bb:3801/128"
+            ]
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.bing.com",
+          "alpn": [
+            "h2"
+          ]
+        }
+      },
+      "tag": "proxy10856"
+    },
+    {
+      "protocol": "masque",
+      "settings": {
+        "address": "162.159.198.2",
+        "port": 443,
+        "remoteDNS": [
+          "1.1.1.1",
+          "8.8.8.8"
+        ]
+      },
+      "streamSettings": {
+        "method": "masque",
+        "masqueSettings": {
+          "warp": {
+            "privateKey": "MHcCAQEEICxjK6xPrk9P0eSsdwy3kHcXpOgyj4V8o6PPbfqXJrUOoAoGCCqGSM49AwEHoUQDQgAEwG8OSD6NWTmmTgziOY01jHxB3VNZh9Tmui6LoQYgV4BCPl87M3JF+oYiXhYKUt0QpfIdA/4/1jNvhoJHOIXoxg==",
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEIaU7MToJm9NKp8YfGxR6r+/h4mcG7SxI8tsW8OR1A5tv/zCzVbCRRh2t87/kxnP6lAy0lkr7qYwu+ox+k3dr6w==",
+            "address": [
+              "172.16.0.2/32",
+              "2606:4700:110:8836:7576:c127:90bb:3801/128"
+            ]
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.bing.com",
+          "alpn": [
+            "h2"
+          ]
+        }
+      },
+      "tag": "proxy10857"
+    },
+    {
+      "protocol": "masque",
+      "settings": {
+        "address": "162.159.199.2",
+        "port": 443,
+        "remoteDNS": [
+          "1.1.1.1",
+          "8.8.8.8"
+        ]
+      },
+      "streamSettings": {
+        "method": "masque",
+        "masqueSettings": {
+          "warp": {
+            "privateKey": "MHcCAQEEICxjK6xPrk9P0eSsdwy3kHcXpOgyj4V8o6PPbfqXJrUOoAoGCCqGSM49AwEHoUQDQgAEwG8OSD6NWTmmTgziOY01jHxB3VNZh9Tmui6LoQYgV4BCPl87M3JF+oYiXhYKUt0QpfIdA/4/1jNvhoJHOIXoxg==",
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEIaU7MToJm9NKp8YfGxR6r+/h4mcG7SxI8tsW8OR1A5tv/zCzVbCRRh2t87/kxnP6lAy0lkr7qYwu+ox+k3dr6w==",
+            "address": [
+              "172.16.0.2/32",
+              "2606:4700:110:8836:7576:c127:90bb:3801/128"
+            ]
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.bing.com",
+          "alpn": [
+            "h2"
+          ]
+        }
+      },
+      "tag": "proxy10858"
+    },
+    {
+      "protocol": "masque",
+      "settings": {
+        "address": "162.159.198.2",
+        "port": 8443,
+        "remoteDNS": [
+          "1.1.1.1",
+          "8.8.8.8"
+        ]
+      },
+      "streamSettings": {
+        "method": "masque",
+        "masqueSettings": {
+          "warp": {
+            "privateKey": "MHcCAQEEICxjK6xPrk9P0eSsdwy3kHcXpOgyj4V8o6PPbfqXJrUOoAoGCCqGSM49AwEHoUQDQgAEwG8OSD6NWTmmTgziOY01jHxB3VNZh9Tmui6LoQYgV4BCPl87M3JF+oYiXhYKUt0QpfIdA/4/1jNvhoJHOIXoxg==",
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEIaU7MToJm9NKp8YfGxR6r+/h4mcG7SxI8tsW8OR1A5tv/zCzVbCRRh2t87/kxnP6lAy0lkr7qYwu+ox+k3dr6w==",
+            "address": [
+              "172.16.0.2/32",
+              "2606:4700:110:8836:7576:c127:90bb:3801/128"
+            ]
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.bing.com",
+          "alpn": [
+            "h2"
+          ]
+        }
+      },
+      "tag": "proxy10859"
+    },
+    {
+      "protocol": "masque",
+      "settings": {
+        "address": "162.159.199.2",
+        "port": 8443,
+        "remoteDNS": [
+          "1.1.1.1",
+          "8.8.8.8"
+        ]
+      },
+      "streamSettings": {
+        "method": "masque",
+        "masqueSettings": {
+          "warp": {
+            "privateKey": "MHcCAQEEICxjK6xPrk9P0eSsdwy3kHcXpOgyj4V8o6PPbfqXJrUOoAoGCCqGSM49AwEHoUQDQgAEwG8OSD6NWTmmTgziOY01jHxB3VNZh9Tmui6LoQYgV4BCPl87M3JF+oYiXhYKUt0QpfIdA/4/1jNvhoJHOIXoxg==",
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEIaU7MToJm9NKp8YfGxR6r+/h4mcG7SxI8tsW8OR1A5tv/zCzVbCRRh2t87/kxnP6lAy0lkr7qYwu+ox+k3dr6w==",
+            "address": [
+              "172.16.0.2/32",
+              "2606:4700:110:8836:7576:c127:90bb:3801/128"
+            ]
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.bing.com",
+          "alpn": [
+            "h2"
+          ]
+        }
+      },
+      "tag": "proxy10860"
+    }
+  ],
+  "routing": {
+    "domainStrategy": "IPIfNonMatch",
+    "rules": [
+      {
+        "type": "field",
+        "inboundTag": [
+          "mixed10845"
+        ],
+        "outboundTag": "proxy10845"
+      },
+      {
+        "type": "field",
+        "inboundTag": [
+          "mixed10846"
+        ],
+        "outboundTag": "proxy10846"
+      },
+      {
+        "type": "field",
+        "inboundTag": [
+          "mixed10847"
+        ],
+        "outboundTag": "proxy10847"
+      },
+      {
+        "type": "field",
+        "inboundTag": [
+          "mixed10848"
+        ],
+        "outboundTag": "proxy10848"
+      },
+      {
+        "type": "field",
+        "inboundTag": [
+          "mixed10849"
+        ],
+        "outboundTag": "proxy10849"
+      },
+      {
+        "type": "field",
+        "inboundTag": [
+          "mixed10850"
+        ],
+        "outboundTag": "proxy10850"
+      },
+      {
+        "type": "field",
+        "inboundTag": [
+          "mixed10851"
+        ],
+        "outboundTag": "proxy10851"
+      },
+      {
+        "type": "field",
+        "inboundTag": [
+          "mixed10852"
+        ],
+        "outboundTag": "proxy10852"
+      },
+      {
+        "type": "field",
+        "inboundTag": [
+          "mixed10853"
+        ],
+        "outboundTag": "proxy10853"
+      },
+      {
+        "type": "field",
+        "inboundTag": [
+          "mixed10854"
+        ],
+        "outboundTag": "proxy10854"
+      },
+      {
+        "type": "field",
+        "inboundTag": [
+          "mixed10855"
+        ],
+        "outboundTag": "proxy10855"
+      },
+      {
+        "type": "field",
+        "inboundTag": [
+          "mixed10856"
+        ],
+        "outboundTag": "proxy10856"
+      },
+      {
+        "type": "field",
+        "inboundTag": [
+          "mixed10857"
+        ],
+        "outboundTag": "proxy10857"
+      },
+      {
+        "type": "field",
+        "inboundTag": [
+          "mixed10858"
+        ],
+        "outboundTag": "proxy10858"
+      },
+      {
+        "type": "field",
+        "inboundTag": [
+          "mixed10859"
+        ],
+        "outboundTag": "proxy10859"
+      },
+      {
+        "type": "field",
+        "inboundTag": [
+          "mixed10860"
+        ],
+        "outboundTag": "proxy10860"
+      }
+    ]
+  }
+}

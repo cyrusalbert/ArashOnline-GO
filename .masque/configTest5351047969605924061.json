@@ -1,0 +1,79 @@
+{
+  "log": {
+    "loglevel": "warning"
+  },
+  "inbounds": [
+    {
+      "tag": "socks56995",
+      "port": 56995,
+      "listen": "127.0.0.1",
+      "protocol": "mixed",
+      "settings": {
+        "auth": "noauth",
+        "udp": true
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "masque",
+      "settings": {
+        "address": "162.159.199.2",
+        "port": 8095,
+        "remoteDNS": [
+          "1.1.1.1",
+          "8.8.8.8"
+        ]
+      },
+      "streamSettings": {
+        "method": "masque",
+        "masqueSettings": {
+          "warp": {
+            "privateKey": "MHcCAQEEICxjK6xPrk9P0eSsdwy3kHcXpOgyj4V8o6PPbfqXJrUOoAoGCCqGSM49AwEHoUQDQgAEwG8OSD6NWTmmTgziOY01jHxB3VNZh9Tmui6LoQYgV4BCPl87M3JF+oYiXhYKUt0QpfIdA/4/1jNvhoJHOIXoxg==",
+            "publicKey": "MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEIaU7MToJm9NKp8YfGxR6r+/h4mcG7SxI8tsW8OR1A5tv/zCzVbCRRh2t87/kxnP6lAy0lkr7qYwu+ox+k3dr6w==",
+            "address": [
+              "172.16.0.2/32",
+              "2606:4700:110:8836:7576:c127:90bb:3801/128"
+            ]
+          }
+        },
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.bing.com",
+          "alpn": [
+            "h2"
+          ]
+        }
+      },
+      "tag": "proxy"
+    },
+    {
+      "tag": "direct",
+      "protocol": "freedom",
+      "streamSettings": {
+        "sockopt": {
+          "happyEyeballs": {
+            "tryDelayMs": 300,
+            "prioritizeIPv6": false,
+            "interleave": 2,
+            "maxConcurrentTry": 20
+          }
+        }
+      }
+    },
+    {
+      "tag": "block",
+      "protocol": "blackhole"
+    }
+  ],
+  "routing": {
+    "domainStrategy": "AsIs",
+    "rules": [
+      {
+        "type": "field",
+        "network": "tcp,udp",
+        "outboundTag": "proxy"
+      }
+    ]
+  }
+}
